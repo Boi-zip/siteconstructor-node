@@ -22,6 +22,7 @@ app.use(express.static(path.join(__dirname, '/public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
+console.log(path.join(__dirname, '/public'));
 
 app.use(function(req, res, next) {
   res.status(404)
